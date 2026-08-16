@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a0b2e;
+    margin: 0;
+    padding: 0;
+}
+
+/* Kotak Login */
+.login-container {
+    width: 300px;
+    margin: 80px auto;
+    padding: 25px 40px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.6);
+}
+
+/* Judul LOGIN */
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #6a0dad;
+}
+
+/* Logo */
+.logo {
+    display: block;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin: 0 auto 25px auto;
+
+    /* Membuat gambar menjadi bulat */
+    border-radius: 50%;
+
+    /* Border logo */
+    border: 4px solid #8a2be2;
+
+    /* Efek cahaya */
+    box-shadow: 0 0 15px rgba(138, 43, 226, 0.7);
+}
+
+/* Label */
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+/* Input Username dan Password */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    box-sizing: border-box;
+}
+
+/* Tombol Login */
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+
+    background-color: #7b2cbf;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+/* Efek ketika tombol disentuh */
+button[type="submit"]:hover {
+    background-color: #5a189a;
+}
+
+/* Link */
+p {
+    text-align: center;
+}
+
+a {
+    color: #7b2cbf;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+
+    .login-container {
+        width: 90%;
+        margin: 50px auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    button[type="submit"] {
+        font-size: 16px;
+    }
+}
